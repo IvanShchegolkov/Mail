@@ -28,6 +28,8 @@ namespace Mail
             services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
+
             services.AddControllersWithViews();
         }
 
