@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace Mail.Models
 {
+    /// <summary>
+    /// Модель получения данных из файла конфигурации SMTP
+    /// </summary>
     public class EmailSettings
     {
         public string From { get; set; }

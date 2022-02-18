@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace Mail.Models
 {
+    /// <summary>
+    /// Модель данных для записи и чтения из базы данных
+    /// </summary>
     public class Mail
     {
         public int Id { get; set; }
